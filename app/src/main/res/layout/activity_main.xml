@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.gdmec.android.calculatordemo.MainActivity">
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:editable="false"
+        android:gravity="right|bottom" />
+    <TableLayout
+        android:stretchColumns="0,1,2,3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/et_input"
+        android:gravity="center_horizontal">
+        <TableRow>
+            <Button
+                android:gravity="right|bottom"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="C"
+                android:textSize="20sp"
+                android:id="@+id/btn_clear"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="right|bottom"
+                android:text="DEL"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:id="@+id/btn_del"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="right|bottom"
+                android:text="÷"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:id="@+id/btn_divide"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="right|bottom"
+                android:text="×"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:id="@+id/btn_multiply"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>
