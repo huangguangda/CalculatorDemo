@@ -22,6 +22,7 @@
         android:orientation="horizontal"
         android:layout_below="@+id/et_input"
         android:gravity="center_horizontal">
+
         <TableRow>
             <Button
                 android:gravity="right|bottom"
